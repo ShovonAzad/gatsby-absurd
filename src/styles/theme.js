@@ -12,15 +12,15 @@ const theme = {
   },
   color: {
     white: {
-      regular: '#FFFFFF',
-      dark: '#F6F6F6',
+      regular: '#FEFBF3',
+      dark: '#F8F0DF',
     },
     black: {
-      lighter: '#ABA8AF',
-      light: '#564F62',
-      regular: '#211E26',
+      lighter: '#fff',
+      light: '#e6e6e6',
+      regular: '#9D9D9D',
     },
-    primary: '#8bd8ed',
+    primary: '#6D9886',
   },
   screen: {
     xs: '575px',

@@ -47,7 +47,11 @@ export const NavItem = styled.li`
   a {
     text-decoration: none;
     opacity: 0.7;
-    color: ${props => props.theme.color.black.regular};
+    color: ${props => props.theme.color.white.regular};
+  }
+
+  &:hover {
+	  color: ${props => props.theme.color.white.dark}
   }
 
   &.active {
@@ -64,6 +68,7 @@ export const MobileMenu = styled.div`
 
 export const Brand = styled.div`
   font-family: ${props => props.theme.font.primary};
+  color: ${props => props.theme.color.white.regular};
   ${props => props.theme.font_size.large};
 `;
 

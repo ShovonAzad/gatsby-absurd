@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
 
 import { Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
@@ -26,21 +25,11 @@ const Header = () => (
       <HeaderWrapper>
         <Container>
           <Grid>
-            <Art>
-              <Img fluid={data.art_build.childImageSharp.fluid} />
-            </Art>
             <Text>
-              <h1>
-                Fast in
-                <br />
-                every way
-                <br />
-                that matters
-              </h1>
-              <br />
+              <h1 style={{color: '#fff'}}>Future Farms</h1>
               <p>
-                <StyledExternalLink href="https://github.com/ajayns/gatsby-absurd">
-                  Check out source &nbsp;&#x2794;
+                <StyledExternalLink href="https://www.facebook.com/watteh.greens">
+                  Lear more &nbsp;&#x2794;
                 </StyledExternalLink>
               </p>
             </Text>
@@ -52,8 +41,10 @@ const Header = () => (
 );
 
 const HeaderWrapper = styled.header`
-  background-color: ${props => props.theme.color.primary};
+  background: url('images/landing.png');
   padding-top: 96px;
+  height: 100vh;
+  width: 100%;
 
   @media (max-width: ${props => props.theme.screen.md}) {
     padding-top: 128px;
@@ -91,19 +82,17 @@ const Grid = styled.div`
 `;
 
 const Text = styled.div`
-  justify-self: center;
-
   @media (max-width: ${props => props.theme.screen.md}) {
     justify-self: start;
   }
 `;
 
 const StyledExternalLink = styled(ExternalLink)`
-  color: inherit;
+  color: ${props => props.theme.color.white.regular};
   text-decoration: none;
 
   &:hover {
-    color: ${props => props.theme.color.black.regular};
+    color: ${props => props.theme.color.white.dark};
   }
 `;
 

@@ -61,5 +61,12 @@ module.exports = {
         },
       },
     },
+	{
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      name: `backgrounds`,
+      path: `${__dirname}/static/images/carousel`, // wherever background images are stored
+    },
+  }
   ],
 };
